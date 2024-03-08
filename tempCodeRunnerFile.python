@@ -1,0 +1,22 @@
+from tkinter import *
+from tkinter import messagebox
+
+def equation1():
+        eq = a.get()
+        x = eval(eq)
+        solu.config(text=f" {x}")
+    
+root = Tk()
+root.title("Equation Solving")
+
+Label(text="Enter an equation").pack()
+a = Entry()
+a.pack()
+
+solu= Label(text="", font="Arial" "12")
+solu.pack()
+
+b= Button(text="Answer", command=equation1)
+b.pack()
+
+root.mainloop()
